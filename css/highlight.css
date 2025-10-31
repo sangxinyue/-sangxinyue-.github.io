@@ -1,0 +1,71 @@
+.markdown-body .highlight pre,
+.markdown-body pre {
+  padding: 1.45rem 1rem;
+}
+.markdown-body pre code.hljs {
+  padding: 0;
+}
+.markdown-body pre[class*="language-"] {
+  padding-top: 1.45rem;
+  padding-bottom: 1.45rem;
+  padding-right: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+.markdown-body .code-wrapper {
+  position: relative;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+.markdown-body .hljs,
+.markdown-body .highlight pre,
+.markdown-body .code-wrapper pre,
+.markdown-body figure.highlight td.gutter {
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  background-color: var(--highlight-bg-color);
+}
+pre[class*=language-].line-numbers {
+  position: initial;
+}
+figure {
+  margin: 1rem 0;
+}
+figure.highlight {
+  position: relative;
+}
+figure.highlight table {
+  border: 0;
+  margin: 0;
+  width: auto;
+  border-radius: 4px;
+}
+figure.highlight td {
+  border: 0;
+  padding: 0;
+}
+figure.highlight tr {
+  border: 0;
+}
+figure.highlight td.code {
+  width: 100%;
+}
+figure.highlight td.gutter {
+  display: table-cell;
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+  z-index: 1;
+}
+figure.highlight td.gutter pre {
+  text-align: right;
+  padding: 0 0.75rem;
+  border-radius: initial;
+  border-right: 1px solid #999;
+}
+figure.highlight td.gutter pre span.line {
+  color: #999;
+}
+figure.highlight td.code > pre {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
