@@ -1322,3 +1322,12 @@ body.dark-theme .highlight .code .deletion,
 body.dark-theme .highlight .code .meta {
   color: #7f7f7f;
 }
+header.navbar {
+  background-color: #000;
+}
+a {
+  color: #2c3e50;
+}
+a:hover {
+  color: #e74c3c;
+}
