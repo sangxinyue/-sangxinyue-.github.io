@@ -1,0 +1,43 @@
+/* 自定义样式 */
+:root {
+  --global-bg: #030405;
+  --font-color: #ffffff;
+}
+
+/* 修改链接颜色 */
+.post-content a {
+  color: #49B1F5;
+  border-bottom: 1px solid #49B1F5;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.post-content a:hover {
+  color: #FF7242;
+  border-bottom-color: #FF7242;
+}
+
+/* 美化代码块 */
+.highlight-wrap {
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* 自定义卡片阴影 */
+.card-widget, .post-card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.card-widget:hover, .post-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+.snowflake {
+  position: fixed;
+  top: -10px;
+  z-index: 9999;
+  color: #fff;
+  user-select: none;
+  pointer-events: none;
+}
