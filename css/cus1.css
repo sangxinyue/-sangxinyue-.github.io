@@ -1,0 +1,21 @@
+/* 雪花特效：样式与动画 */
+.snowflake {
+  position: fixed;
+  top: -10px;        /* 雪花初始在视口上方 */
+  color: #fff;       /* 雪花颜色（白色适配多数背景） */
+  font-size: 16px;   /* 雪花基础大小 */
+  opacity: 0.7;      /* 透明度 */
+  pointer-events: none; /* 避免雪花遮挡点击事件 */
+  z-index: 9999;     /* 确保雪花在最上层 */
+  animation: snowFall linear infinite; /* 绑定下落动画 */
+}
+
+/* 雪花下落动画关键帧 */
+@keyframes snowFall {
+  from {
+    transform: translateY(-10px) rotate(0deg); /* 初始位置与旋转 */
+  }
+  to {
+    transform: translateY(100vh) rotate(360deg); /* 落至视口底部，旋转一周 */
+  }
+}
